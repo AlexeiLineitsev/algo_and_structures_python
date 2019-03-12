@@ -1,15 +1,13 @@
 #5.	Пользователь вводит две буквы. Определить, на каких местах
 # алфавита они стоят, и сколько между ними находится букв.
 
-a = 'a'
-b = 'k'
+first_chr = 'a'
+second_chr = 'k'
 
 # Или может пользователь
-# a = str(input('Первая буква - '))
-# b = str(input('Вторая буква - '))
+# first_chr = str(input('Первая буква - '))
+# second_chr = str(input('Вторая буква - '))
 
-c = ord(b) - ord('a') + 1
-d = ord(b) - ord(a) - 1
-
-print('Стоит на месте - ',c)
-print('Между ними букв - ',d)
+print(first_chr,'Стоит на месте - ',ord(first_chr) - ord('a') + 1)
+print(second_chr,'Стоит на месте - ',ord(second_chr) - ord('a') + 1)
+print('Между ними букв - ',ord(second_chr) - ord(first_chr) - 1)
